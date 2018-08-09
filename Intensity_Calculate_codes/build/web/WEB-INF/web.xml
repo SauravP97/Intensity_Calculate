@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>Calculate</servlet-name>
+        <servlet-class>Calculate</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>java</servlet-name>
+        <servlet-class>ReadFile.java</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ReadFile</servlet-name>
+        <servlet-class>ReadFile</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Calculate</servlet-name>
+        <url-pattern>/Calculate</url-pattern>
+    </servlet-mapping>
+    <welcome-file-list>
+        <welcome-file>index1.jsp</welcome-file>
+    </welcome-file-list>
+    <servlet-mapping>
+        <servlet-name>java</servlet-name>
+        <url-pattern>/java</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ReadFile</servlet-name>
+        <url-pattern>/ReadFile</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
